@@ -12,7 +12,7 @@ const CardArticle = (props) => {
         border: props.border,
       }}
     >
-      <Link to={`/product/?id=${props.product.id}`}>
+      <Link to={`/product?id=${props.product.id}`}>
         <article className="article-card">
           <figure className="article-image">
             <img src={`${BASE_URL}${props.product.image}`} alt="Watch image" />
