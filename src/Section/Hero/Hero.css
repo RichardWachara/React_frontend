@@ -1,0 +1,120 @@
+.hero-section {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  background-image: url("../../assets/background_Watch.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.hero {
+  z-index: 2;
+}
+
+.hero h4,
+.hero h1,
+.hero p {
+  color: #fff;
+}
+.hero p{
+    padding-bottom: 12px;
+    line-height: 18px;
+}
+
+.hero h2 {
+  color: orange;
+}
+
+.hero .button {
+  padding: 12px 28px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 15px;
+  background-color: transparent;
+  text-align: left;
+  transition: 0.3s;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+.hero .button::after {
+  content: "➔";
+  margin-left: 20px;
+  height: 2px;
+  width: 30%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 12px !important;
+  color: black;
+  font-weight: 800 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: rgb(212, 212, 212);
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+.swiper-wrapper {
+    transition-timing-function: ease-in-out !important;
+  }
+
+@media (max-width: 799px) {
+  .hero-section {
+    height: 40vh;
+    background-position: 35% 30%;
+    margin-top: 0px;
+  }
+  .hero h2,
+  .hero h1 {
+    font-size: 28px;
+    padding: 0;
+    line-height: 36px;
+  }
+
+  .hero h4{
+    font-size: 8px;
+  }
+
+  .hero p {
+    font-size: 10px;
+    padding-bottom: 12px;
+    line-height: 16px;
+  }
+  .hero .button {
+    padding: 15px 16px;
+    font-size: 12px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
